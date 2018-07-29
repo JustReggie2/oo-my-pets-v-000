@@ -51,7 +51,15 @@ class Owner
     @pets[:fishes].each {|fish| fish.mood = "happy"}
   end
 
-
+  def sell_pets
+    @pets.each do |key, value|
+      value.each do |pet|
+        pet.mood = "nervous"
+      end
+      value.clear
+    end
+  end
+    
   
 end
 
