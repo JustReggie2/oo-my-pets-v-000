@@ -59,8 +59,8 @@ class Owner
       value.clear
     end
   end
-    
-  
+
+
 end
 
 
